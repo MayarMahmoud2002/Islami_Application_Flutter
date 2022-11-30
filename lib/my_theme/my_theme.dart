@@ -9,6 +9,7 @@ class MyThemeData
 
 
 
+
   //create two object light and dark theme
   //static before object to call it by name of class
   static ThemeData lightTheme = ThemeData(
@@ -27,9 +28,14 @@ class MyThemeData
     subtitle1:TextStyle(
       fontSize: 25.0,
       fontWeight: FontWeight.bold ,
-      color: colorgold,
-    ),
+      color: colorgold),
   ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: colorgold,
+      selectedItemColor: colorblack,
+      unselectedItemColor: Colors.white,
+    ),
+
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -45,6 +51,7 @@ class MyThemeData
         color: Colors.black,
       ),
     ),
+
   );
 
 
