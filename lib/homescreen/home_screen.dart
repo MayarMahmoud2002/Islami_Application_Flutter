@@ -37,30 +37,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           body:screens[currentIndex] ,
-          // body: Center(
-          //   child: Column(
-          //     children: [
-          //       Image.asset('assets/images/quraan.png',
-          //
-          //       ),
-          //       Divider(
-          //         thickness: 3.0,
-          //         color: Color.fromRGBO(183, 147, 95, 1.0),
-          //
-          //       ),
-          //       Text(
-          //         'اسم السورة',
-          //         style: Theme.of(context).textTheme.headline1,
-          //       ),
-          //       Divider(
-          //         thickness: 3.0,
-          //         color: Color.fromRGBO(183, 147, 95, 1.0),
-          //
-          //       ),
-          //
-          //     ],
-          //   ),
-          // ),
           bottomNavigationBar:BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             currentIndex: currentIndex,
@@ -70,8 +46,6 @@ class _HomeScreenState extends State<HomeScreen> {
               setState(() {
 
               });
-
-
             },
             items:
             [
